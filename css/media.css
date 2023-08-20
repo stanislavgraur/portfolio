@@ -1,0 +1,255 @@
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 16px 20px; /* Изменяем отступы для мобильных экранов */
+    }
+    .nav {
+        display: none; /* Скрываем навигацию на мобильных экранах */
+    }
+
+    .logo__image {
+        display: none; /* Скрываем логотип на мобильных экранах */
+    }
+
+    .logo__image--white {
+        display: inline; /* Показываем светлый логотип на мобильных экранах */
+    }
+    .contact-btn {
+        display: block; /* Располагаем кнопку на всю ширину контейнера */
+        margin-top: 16px;
+    }
+
+    
+    .hero__title {
+        font-size: 64px; /* Уменьшить размер заголовка */
+        left: 30px; /* Изменить отступ слева */
+        bottom: 30px; /* Изменить отступ снизу */
+        text-align: left; /* Выравнивание по центру */
+        letter-spacing: -4.68px;
+    }
+
+    .metrics {
+        flex-direction: column; /* Изменяем направление на вертикальное */
+        align-items: center; /* Выравнивание элементов по центру */
+        padding: 64px 20px; /* Изменяем отступы */
+    }
+    
+    .metric {
+        margin-bottom: 40px; /* Добавляем отступ снизу между метриками */
+    }
+    
+    
+    .metric__description {
+        font-size: 24px; /* Уменьшаем размер описаний */
+    }
+
+    .who-we-are {
+        padding: 64px 20px; /* Изменяем отступы */
+    }
+    
+    .section-description {
+        font-size: 32px; /* Уменьшаем размер текста */
+        letter-spacing: -2.68px;
+    }
+
+    .technical-expertise {
+        padding: 64px 20px; /* Изменяем отступы */
+    }
+    
+    .section-content {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        gap: 40px; /* Уменьшаем промежуток между элементами */
+    }
+    
+    .section-content__image {
+        height: auto; /* Автоматическая высота для изображения */
+    }
+    
+    .section-content__title {
+        font-size: 36px; /* Уменьшаем размер заголовка */
+        margin-bottom: 32px; /* Уменьшаем отступ снизу */
+        text-align: center; /* Выравнивание по центру */
+    }
+    
+    .section-content__text p {
+        font-size: 16px; /* Уменьшаем размер текста */
+        line-height: 1.5; /* Увеличиваем межстрочное расстояние */
+        text-align: center; /* Выравнивание по центру */
+    }
+    
+    .button {
+        margin: 0 auto; /* Выравнивание кнопки по центру */
+    }
+
+    .design-services {
+        display: none;
+    }
+
+    .design-services-2 {
+        padding: 64px 20px; /* Изменяем отступы */
+    }
+    
+    .section-content {
+        flex-direction: column-reverse; /* Меняем порядок блоков */
+        gap: 40px; /* Уменьшаем промежуток между элементами */
+    }
+    
+    .section-content__image {
+        height: auto; /* Автоматическая высота для изображения */
+    }
+    
+    .section-content__title {
+        font-size: 36px; /* Уменьшаем размер заголовка */
+        margin-bottom: 32px; /* Уменьшаем отступ снизу */
+        text-align: start; /* Выравнивание по центру */
+    }
+    
+    .section-content__text p {
+        font-size: 16px; /* Уменьшаем размер текста */
+        line-height: 1.5; /* Увеличиваем межстрочное расстояние */
+        text-align: start; /* Выравнивание по центру */
+    }
+    
+    .button {
+        margin: 0 auto; /* Выравнивание кнопки по центру */
+    }
+
+    .services__accordion {
+        padding: 64px 20px; /* Изменяем отступы */
+        align-items: start; /* Выравнивание элементов по центру */
+    }
+    
+    .services__accordion-item {
+        font-size: 36px; /* Уменьшаем размер текста кнопок */
+        padding: 48px 0; /* Уменьшаем вертикальный отступ кнопок */
+        justify-content: space-between; /* Выравнивание по центру */
+        align-items: center; /* Выравнивание элементов по центру */
+    }
+    
+    .services__accordion-item:after {
+        font-size: 24px; /* Уменьшаем размер текста "More"/"Less" */
+    }
+    
+    .services__panel p {
+        width: 100%; /* Устанавливаем ширину текста на всю ширину экрана */
+        padding: 20px 0; /* Уменьшаем вертикальный отступ текста */
+    }
+
+    .team {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: center;
+        gap: 40px; /* Увеличиваем промежуток между элементами */
+        padding: 64px 0;
+    }
+    
+    .team__title h3 {
+        font-size: 36px; /* Уменьшаем размер заголовка */
+        width: auto; /* Убираем фиксированную ширину */
+        text-align: start; /* Выравнивание по центру */
+        margin-left: 20px;
+    }
+    
+    .team__card-list {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: center;
+        gap: 20px; /* Увеличиваем промежуток между карточками */
+        margin-left: 20px;
+    }
+    
+    .team-card__image-wrap {
+        height: auto; /* Автоматическая высота для изображений */
+        gap: 10px; /* Увеличиваем промежуток между изображением и контентом */
+    }
+    
+    .team-card__name-surname {
+        font-size: 28px; /* Уменьшаем размер имени и фамилии */
+        text-align: center; /* Выравнивание по центру */
+    }
+    
+    .team-card__position {
+        font-size: 20px; /* Уменьшаем размер должности */
+        text-align: center; /* Выравнивание по центру */
+    }
+
+    .newsletter {
+        padding: 64px 0;
+    }
+
+    .newsletter__container {
+        text-align: center;
+        gap: 32px;
+        letter-spacing: -1px;
+    }
+
+    .newsletter__heading {
+        width: 300px;
+    }
+
+    .newsletter__form {
+        width: 370px; /* Занимает всю ширину на мобильных устройствах */
+        background-image: none; /* Убираем фоновое изображение */
+        text-align: center;
+    }
+
+    .form-wrapper {
+        width: 300px;
+    }
+    
+    .newsletter__title {
+        width: 100%; /* Занимает всю ширину на мобильных устройствах */
+    }
+    
+    .newsletter__heading {
+        font-size: 40px; /* Уменьшаем размер заголовка */
+        line-height: 1.2; /* Увеличиваем межстрочный интервал */
+    }
+    
+    .text-bottom {
+        width: 100%; /* Занимает всю ширину на мобильных устройствах */
+        font-size: 14px; /* Уменьшаем размер текста */
+    }
+    
+    .text-field {
+        width: 80%;
+    }
+    
+    .btn {
+        padding: 12px 102px; /* Уменьшаем размер кнопки */
+        font-size: 14px; /* Уменьшаем размер текста кнопки */
+    }
+
+    .footer {
+        padding: 12px 0; /* Уменьшаем внутренние отступы */
+        margin-left: 20px;
+    }
+    
+    .footer__columns {
+        flex-direction: column; /* Столбцовый макет на мобильных устройствах */
+        width: 100%; /* Занимает всю ширину на мобильных устройствах */
+        margin: 0; /* Убираем боковые отступы */
+    }
+    
+    .footer__small-columns {
+        width: 100%; /* Занимает всю ширину на мобильных устройствах */
+        gap: 20px; /* Уменьшаем промежуток между колонками */
+        flex-direction: column; /* Столбцовый макет на мобильных устройствах */
+    }
+    
+    .footer__title {
+        width: auto; /* Автоматическая ширина на мобильных устройствах */
+    }
+    
+    .footer__links a {
+        font-size: 14px; /* Уменьшаем размер текста ссылок */
+    }
+
+    .footer-content__title {
+        width: 250px;
+    }
+
+    .footer__columns-copyright {
+        padding: 16px 0 8px;
+    }
+}
+
+
