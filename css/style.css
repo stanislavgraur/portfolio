@@ -1,0 +1,743 @@
+
+html {
+    scroll-behavior: smooth;
+}
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+  /* Header styles */
+.header {
+    background-color: transparent;
+    position: fixed; /* Изменим на fixed, чтобы навбар всегда был видимым */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Добавим z-index */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 140px;
+    box-sizing: border-box;
+    transition: background-color 0.1s;
+}
+
+.header--white-bg {
+    background-color: #fff; /* Добавим фон белого цвета при активации класса */
+}
+
+.header--white-bg .logo__link {
+    color: #333; /* Change the color of the logo when the background is white */
+}
+
+
+/* Показать светлый логотип при белом фоне */
+.header--white-bg .logo__image--white {
+    display: inline;
+}
+
+  /* Скрыть тёмный логотип при белом фоне */
+.header--white-bg .logo__image {
+    display: none;
+}
+
+.logo__image--white {
+    display: none;
+}
+
+.header--white-bg .nav__link {
+    color: #333; /* Change the color of navigation links when the background is white */
+}
+
+.header--white-bg .contact-btn {
+    background-color: #fff; 
+    color: #333; 
+    border-color: #333;
+
+}
+
+.header--white-bg .contact-btn:hover {
+    background-color: #00B2E6;
+    color: #fff;
+    border-color: #00B2E6;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Стили ссылок в навбаре */
+.nav__link {
+    color: #fff; /* Цвет ссылок по умолчанию */
+    text-decoration: none;
+    transition: color 0.3s; /* Плавная анимация изменения цвета */
+}
+
+/* Изменение цвета при наведении */
+.nav__link:hover {
+    color: #00B2E6; /* Новый цвет при наведении */
+    
+}
+
+.contact-btn {
+    background-color: transparent; /* Изменяем фон кнопки */
+    color: #fff; /* Изменяем цвет текста кнопки */
+    padding: 16px 48px;
+    margin-left: 20px;
+    border: 1px solid #FFF;
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для цветов */
+}
+
+
+.contact-btn:hover {
+    background-color: #fff; /* Изменяем фон кнопки при наведении */
+    color: #000; /* Изменяем цвет текста кнопки при наведении */
+}
+
+  /* Hero styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__title {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    font-family: Inter;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -7.68px;
+    color: #fff;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    padding: 128px 140px;
+}
+
+.metric {
+    text-align: center;
+    width: 230px;
+}
+
+.metric__number {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -4.8px;
+}
+
+.metric__description {
+    color: #1C1A1A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+
+.who-we-are {
+    padding: 128px 140px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.label__icon {
+    width: 12px;
+    height: 12px;
+    fill: #007bff;
+    margin-right: 8px;
+}
+
+.label__text {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+    letter-spacing: -0.72px;
+}
+
+.section-description {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -2.2px;
+}
+
+.technical-expertise {
+    padding: 128px 140px;
+    background-color: #fff;
+}
+
+.design-services {
+    padding: 128px 140px;
+    background-color: #fff;
+}
+
+
+.section-content  {
+    display: flex;
+    align-items: center;
+    gap: 170px;
+    
+}
+
+.section-content__text {
+    flex: 1;
+}
+
+.section-content__title {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -3.2px;
+    margin-bottom: 64px;
+}
+
+.section-content__text p {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: -1px;
+    margin-bottom: 64px;
+}
+
+.section-content__image {
+    max-width: 100%;
+    height: 700px;
+}
+
+.button {
+    display: inline-block;
+    background-color: transparent;
+    color: #333;
+    padding: 16px 48px;
+    border: 1px solid #333;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.services__label {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 128px 140px 0;
+    margin-bottom: 48px;
+}
+
+.services__label-icon {
+    margin-right: 16px;
+}
+
+.services__label-text {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+    letter-spacing: -0.72px;
+}
+
+
+.services__accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 128px 140px;
+}
+
+.services__accordion-container {
+    display: block;
+    width: 100%;
+}
+
+.services__accordion-item {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 36px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -3.2px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-top: none; /* Убираем обводку сверху у всех элементов */
+}
+
+.services__accordion-item:first-child {
+    border-top: 1px solid #D9D9D9; /* Добавляем обводку сверху только первому элементу */
+}
+
+.services__panel {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.services__panel p {
+    width: 1160px;
+    padding: 32px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #777;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.8px;
+}
+
+.services__accordion-item:after {
+    content: "More";
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    color: #1C1A1A;
+    float: right;
+    margin-left: 5px;
+}
+
+.services__accordion-item.active {
+    color: #1C1A1A;
+}
+
+.services__accordion-item.active:after {
+    content: "Less";
+    color: #1C1A1A;
+}
+
+
+/* Общие стили для секции Team */
+.team {
+    display: flex;
+    width: 100%;
+    padding: 128px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.team__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+.team__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.team__title h3 {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -3.2px;
+    width: 668px;
+}
+
+.team__card-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Стили для отдельных элементов */
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.team-card__image-wrap {
+    display: flex;
+    height: 500px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.team-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.team-card__name-surname {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -2px;
+}
+
+.team-card__position {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+
+.newsletter {
+    display: flex;
+    width: 100%;
+    padding: 128px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter__form {
+    display: flex;
+    width: 1160px;
+    padding: 64px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #006FB8;
+    background-image: url(/img/triangle-form.png);
+    background-size: cover;
+}
+
+.newsletter__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.newsletter__title {
+    display: flex;
+    width: 794px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.newsletter__heading { 
+    width: 550px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -3.2px;
+}
+
+.label-white {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.label-white__text {
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+}
+
+.label-white__icon {
+    width: 9px;
+    height: 8px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.text-bottom {
+    width: 400px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.form {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-field {
+    width: 500px;
+    height: auto;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.text-field::placeholder {
+    color: #FFFFFF;
+}
+
+.text-field:focus {
+    outline: none;
+    border: 1px solid #00B2E6; 
+}
+
+.btn { 
+    color: #212121;
+    padding: 16px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid #C2C2C2;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+}
+
+.btn:hover {
+    background-color: #00B2E6;
+    border: 1px solid #00B2E6;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 128px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    background-color: #fff; /* Add a background color for visualization */
+}
+
+.footer__columns {
+    display: flex;
+    width: calc(100% - 280px); /* Calculate width after subtracting side margins */
+    margin: 0 140px; /* Apply side margins of 140px */
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.footer__columns-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 140px 8px; /* Добавляем паддинг сверху */
+    border-top: 1px solid #ddd; /* Добавляем верхнюю границу */
+    color: #858585;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer__columns p {
+    color: #858585;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.footer__logo-wrapper {
+    display: flex;
+    width: 320px;
+    padding-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__small-columns {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 27px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer__title {
+    color: #00B2E6;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.footer__links a {
+    color: #535766;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.footer-content__title {
+    color: #1C1A1A;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2.2px;
+    width: 500px;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 1s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
