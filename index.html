@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Your Website</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+        <a href="#" class="logo__link">
+            <img class="logo__image" src="/img/logo-е.svg" alt="Dark Logo">
+            <img class="logo__image logo__image--white" src="/img/logo.svg" alt="Light Logo">
+        </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+            <li class="nav__item"><a href="#who-we-are" class="nav__link">Who we are?</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">What we do?</a></li>
+            <!--<li class="nav__item"><a href="#approach" class="nav__link">Approach</a></li>-->
+            <li class="nav__item"><a href="#team" class="nav__link">Team</a></li>
+            </ul>
+            <button class="contact-btn" onclick="scrollToNewsletter()">Contact us</button>
+        </nav>
+    </header>
+    <section class="hero">
+        <video class="hero__video" autoplay loop muted>
+            <source src="/img/video(1080p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1 class="hero__title">Our experts are your <br> assurance of quality</h1>
+    </section>
+    <section class="metrics section">
+        <div class="metric">
+            <p class="metric__number">5+</p>
+            <p class="metric__description">years of experience in home appraisal</p>
+        </div>
+        <div class="metric">
+            <p class="metric__number">99%</p>
+            <p class="metric__description">successfully identified problems</p>
+        </div>
+        <div class="metric">
+            <p class="metric__number">50+</p>
+            <p class="metric__description">successfully completed projects</p>
+        </div>
+        <div class="metric">
+            <p class="metric__number">100%</p>
+            <p class="metric__description">of our clients recommend us</p>
+        </div>
+        </section>
+    <section id="who-we-are" class="who-we-are section">
+        <div class="container">
+            <!--<div class="label">
+                <img src="/img/triangle.svg" alt="Polygon" class="label__icon">
+                <span class="label__text">Our Services</span>
+            </div> -->
+            <p class="section-description">
+            We aim to expand our business by offering consultancy services to international organizations operating in the Republic of Moldova.
+            </p>
+        </div>
+    </section>
+    <section class="technical-expertise">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-content__text section">
+                    <h2 class="section-content__title">Technical expertise</h2>
+                    <p>Our team of certified experts in civil engineering fields offer technical assessments and expertise for buildings, structures, and other engineering constructions in need of renovation.</p>
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+                <img src="/img/fsda.png" alt="Technical Expertise" class="section-content__image">
+            </div>
+        </div>
+    </section>
+    <section class="design-services">
+        <div class="container">
+            <div class="section-content">
+                <img src="/img/fsda.png" alt="Technical Expertise" class="section-content__image">
+                <div class="section-content__text section">
+                    <h2 class="section-content__title">Design services</h2>
+                    <p>We provide customised design solutions for homes,
+                        buildings, and specialised engineering structures
+                        that are not typically available from other firms.</p>
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="design-services-2">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-content__text section">
+                    <h2 class="section-content__title">Design services</h2>
+                    <p>We provide customised design solutions for homes,
+                        buildings, and specialised engineering structures
+                        that are not typically available from other firms.</p>
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+                <img src="/img/fsda.png" alt="Technical Expertise" class="section-content__image">
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <!--<div class="label">
+            <img src="/img/triangle.svg" alt="Polygon" class="label__icon">
+            <span class="label__text">Our Services</span>
+        </div> -->
+        <div class="services__accordion">
+            <div class="services__accordion-container">
+                <button class="services__accordion-item">Consultation</button>
+                <div class="services__panel">
+                    <p>Donec congue ut magna ut fermentum nunc vitae. Dictum consequat lacinia in diam felis nulla ante amet risus. Nec phasellus et iaculis elit ut amet tortor mattis. Mattis sed at sit nibh neque lacus maecenas et curabitur.</p>
+                </div>
+                <button class="services__accordion-item">Solution</button>
+                <div class="services__panel">
+                    <p>Est nulla arcu eget placerat eros magna mauris. Elementum sed quis semper ipsum pellentesque ac praesent vitae enim. Diam sit a sit proin pulvinar viverra ornare. Commodo amet nec ipsum imperdiet.</p>
+                </div>
+                <button class="services__accordion-item">Expertise</button>
+                <div class="services__panel">
+                    <p>Donec congue ut magna ut fermentum nunc vitae. Dictum consequat lacinia in diam felis nulla ante amet risus. Nec phasellus et iaculis elit ut amet tortor mattis. Mattis sed at sit nibh neque lacus maecenas et curabitur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="team">
+        <div class="team__container">
+            <div class="team__title animated-element">
+                <!--<div class="label">
+                    <img src="/img/triangle.svg" alt="Polygon" class="label__icon">
+                    <span class="label__text">Team</span>
+                </div> -->
+                <h3 class="animated-element team__subtitle">Professionalism and expertise you can trust</h3>
+            </div>
+            <div class="team__card-list">
+                <div class="team-card">
+                    <div class="team-card__image-wrap">
+                        <img src="/img/1.jpg" alt="team-1">
+                    </div>
+                    <div class="team-card__content animated-element">
+                        <p class="team-card__name-surname">Evgheni Cutia</p>
+                        <p class="team-card__position">CEO</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__image-wrap">
+                        <img src="/img/2.jpg" alt="team-1">
+                    </div>
+                    <div class="team-card__content animated-element">
+                        <p class="team-card__name-surname">Alexandru Guzun</p>
+                        <p class="team-card__position">Engineer</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__image-wrap">
+                        <img src="/img/3.jpg" alt="team-1">
+                    </div>
+                    <div class="team-card__content animated-element">
+                        <p class="team-card__name-surname">Dumitru Mocanu</p>
+                        <p class="team-card__position">Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter" class="newsletter">
+        <div class="newsletter__form">
+            <div class="newsletter__container">
+                <div class="newsletter__title">
+                    <!--<div class="label-white">
+                        <img class="label-white__icon" src="/img/Polygon-white.png" alt="Polygon">
+                        <span class="label-white__text">Newsletter</span>
+                    </div> -->
+                    <h3 class="newsletter__heading">Request an appraisal today!</h3>
+                </div>
+                <div class="form-wrapper">
+                    <div class="form">
+                        <div class="input-wrapper">
+                            <form>
+                                <input class="text-field" type="email" id="email" placeholder="Your email address">
+                                <button class="btn" type="submit">Contact us</button>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="text-bottom">Join our mailing list to get the latest news</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__columns">
+            <div class="footer__column">
+                <div class="footer__logo-wrapper">
+                    <img src="/img/logo.svg" alt="logo" class="footer__logo">
+                </div>
+                <h2 class="footer-content__title">Our experts are your
+                    assurance of quality</h2>
+            </div>
+            <div class="footer__small-columns">
+                <div class="footer__column">
+                    <div class="footer__content">
+                        <h4 class="footer__title">Company</h4>
+                        <div class="footer__links">
+                            <a href="tel:+373 69 28 78 53">+373 69 28 78 53</a>
+                            <a href="tel:+373 22 43 42 32">+373 22 43 42 32</a>
+                            <a href="mailto:email@bauconsult.md">email@bauconsult.md</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__content">
+                        <h4 class="footer__title">Follow us</h4>
+                        <div class="footer__links">
+                            <a href="https://www.facebook.com/">Facebook</a>
+                            <a href="https://www.instagram.com/">Instagram</a>
+                            <a href="https://www.linkedin.com/">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__content">
+                        <h4 class="footer__title">Address</h4>
+                        <div class="footer__links">
+                            <a href="https://goo.gl/maps/TN15CpUnwDy9hbmUA">str. Stefan cel mare, 128 Chișinău, Moldova</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__columns-copyright">
+            <p class="footer__copyright">©2023 All Right Reserved to Bauconsult Group</p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
